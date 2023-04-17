@@ -1,8 +1,12 @@
+import { useEffect } from 'react'
 import { useRef } from 'react'
 
 export default function Box(props) {
   const ref = useRef()
-  console.log(ref)
+
+  useEffect(() => {
+    console.log(ref)
+  })
 
   return (
     <mesh {...props} ref={ref}>
